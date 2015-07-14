@@ -41,7 +41,6 @@ struct WeightContainer: public DataImporter
 		size_t begin = weights.size();
 		weights.resize(weights.size() + numParams);
 		size_t end = weights.size();
-		cout << "conn fr "<< fromName << " to "<< toName << " frsz: " << begin << " tsz: " << end << endl;
 		link_layers(fromName, toName, connName, begin, end);
 		return make_pair(begin, end);
 	}
